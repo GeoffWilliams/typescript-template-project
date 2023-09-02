@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "npx vitest run",
-    "lint": "npx eslint src",
+    "lint": "npx eslint src test",
     "build": "rm -rf dist && npm run lint && npm run test && npx tsc",
     "dev": "npm run build && node dist/app.js"
   },

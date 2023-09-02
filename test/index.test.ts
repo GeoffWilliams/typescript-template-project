@@ -1,12 +1,12 @@
-import {afterEach, beforeAll, beforeEach, describe, expect, it} from "vitest";
+import {describe, expect, it} from "vitest";
 import {getLogger} from "log4js";
-import {getHelloMessage} from "../src"
+import {getHelloMessage} from "../src/index.js";
 
 const logger = getLogger();
 logger.level = "debug";
 
 describe("a test suite", () => {
-    it("a test", async () => {
-        expect(getHelloMessage()).toMatch(/Hello/)
+    it("a test", () => {
+        expect(getHelloMessage()).toMatch(/Hello/);
     });
 });
