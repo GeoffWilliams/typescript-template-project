@@ -44,6 +44,10 @@ module.exports = {
         // Allow unused parameters if the name starts `ignore`
         // https://stackoverflow.com/questions/65921949/eslint-warns-about-unused-function-parameter-type
         "no-unused-vars": "off",
-        "@typescript-eslint/no-unused-vars": ["error", {argsIgnorePattern: "^ignore"}]
+        "@typescript-eslint/no-unused-vars": ["error", {argsIgnorePattern: "^ignore"}],
+
+        // allow deleting Record<> entries
+        // https://stackoverflow.com/questions/48852333/statically-delete-object-key-javascript
+        "@typescript-eslint/no-dynamic-delete": "off"
     }
 };
